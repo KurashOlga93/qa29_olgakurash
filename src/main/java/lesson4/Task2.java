@@ -15,9 +15,8 @@ public class Task2 {
                 min = mass[i];
             }
             if (max < mass[i]) {
-            max = mass[i];
-
-        }
+                max = mass[i];
+            }
             sum += mass[i];
         }
 
