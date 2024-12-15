@@ -17,11 +17,3 @@ public class Task1 {
         }
     }
 }
-
-
-
-
-
-
-
-
