@@ -15,7 +15,7 @@ public class MainApp {
                 new PhoneReceivingImpl(),
                 new SaveOrderImpl(),
                 new NotificationImpl(),
-                new NotDeliveryImpl());
+                new WindowDeliveryImpl());
 
         handler.register(order);
     }

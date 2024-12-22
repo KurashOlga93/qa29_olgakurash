@@ -3,7 +3,7 @@ package lesson7.service.impl;
 import lesson7.domain.Order;
 import lesson7.service.ReceivingOrder;
 import lesson7.service.OrderHandle;
-import lesson7.service.SaveOrderToDB;
+import lesson7.service.SaveOrder;
 import lesson7.service.PreparingOrder;
 import lesson7.service.DeliveryOrder;
 
@@ -11,11 +11,11 @@ import lesson7.service.DeliveryOrder;
 public class OrderHandleImpl implements OrderHandle {
 
     private ReceivingOrder receiving;
-    private SaveOrderToDB db;
+    private SaveOrder db;
     private PreparingOrder notification;
     private DeliveryOrder delivery;
 
-    public OrderHandleImpl(ReceivingOrder receiving, SaveOrderToDB save, PreparingOrder notification, DeliveryOrder delivery) {
+    public OrderHandleImpl(ReceivingOrder receiving, SaveOrder save, PreparingOrder notification, DeliveryOrder delivery) {
         this.receiving = receiving;
         this.db = save;
         this.notification = notification;
