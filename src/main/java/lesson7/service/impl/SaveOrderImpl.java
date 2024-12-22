@@ -1,9 +1,9 @@
 package lesson7.service.impl;
 
 import lesson7.domain.Order;
-import lesson7.service.SaveOrderToDB;
+import lesson7.service.SaveOrder;
 
-public class SaveOrderImpl implements SaveOrderToDB {
+public class SaveOrderImpl implements SaveOrder {
 
     @Override
     public void save(Order order) {
