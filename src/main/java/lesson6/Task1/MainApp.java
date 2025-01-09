@@ -25,5 +25,6 @@ public class MainApp {
         int count = report.productCountByType(list, Type.MOBILE);
         System.out.println("Count of available devices by type:  " + count);
 
+
     }
 }
