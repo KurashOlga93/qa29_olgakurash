@@ -4,9 +4,7 @@ import lesson10.Product;
 import lesson10.ProductReport;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 public class MainAppList {
 
@@ -26,9 +24,11 @@ public class MainAppList {
 
         ProductReport pr = new ProductReport();
 
-        pr.productByName(list, "Cookie");
-        pr.productByPrice(list, 200);
-        pr.totalAmount(list);
+        System.out.println("Found product by name: " + pr.productByName(list, "Cookie"));
+
+        System.out.println("Found product by price: " + pr.productByPrice(list, 100));
+
+        System.out.println("Total amount of products: " + pr.totalAmount(list));
 
         int centerIndex = list.size() / 2;
 
